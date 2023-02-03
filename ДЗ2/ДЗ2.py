@@ -6,13 +6,16 @@
 # 5 -> 1 0 1 1 0
 # 2
 
-# n = int(input("Введите количество монеток :"))
-# k = 0
-# for i in range(n):
-#     v = int(input())
-#     if v == 1:
-#         k += 1
-# print(k if k < n/2 else n - k)
+n = int(input("Введите количество монеток :"))
+k = 0
+for i in range(n):
+    v = int(input())
+    if v == 1:
+        if k < n/2:
+            n - k
+    else:
+        k += 1
+print(k)
 
 
 # Задача 14: Требуется вывести все целые степени двойки (т.е. числа вида 2k), не превосходящие числа N.
@@ -33,14 +36,14 @@
 # 4 4 -> 2 2
 # 5 6 -> 2 3
 
-x = int(input("Введите x : "))
-y = int(input("Введите y : "))
+# x = int(input("Введите x : "))
+# y = int(input("Введите y : "))
 
-S = 0
-P = 0
-if x <= 1000 and y <= 1000:
-    S = x + y
-    P = x * y
-else:
-    print("error")
-print(S, P)
+# S = 0
+# P = 0
+# if x <= 1000 and y <= 1000:
+#     S = x + y
+#     P = x * y
+# else:
+#     print("error")
+# print(S, P)
